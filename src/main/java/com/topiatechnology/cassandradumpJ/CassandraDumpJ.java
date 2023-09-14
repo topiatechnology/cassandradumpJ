@@ -584,7 +584,7 @@ public class CassandraDumpJ {
             }
         } catch (ParseException e) {
             System.out.println("Error: " + e.getMessage());
-            helpFormatter.printHelp("java -jar cassandradumpJ-*.jar", helpHeader, cli_parser, helpFooter);
+            helpFormatter.printHelp("java -jar cassandradumpJ-*-jar-with-dependencies.jar", helpHeader, cli_parser, helpFooter);
             System.exit(1);
         }
         return instance;
@@ -605,7 +605,7 @@ public class CassandraDumpJ {
         parser.addOption(new Option(null, "no-insert", false, "don't generate insert statements"));
         parser.addOption(new Option(null, "password", true, "set password for authentication (only if protocol-version is set)"));
         parser.addOption(new Option(null, "protocol-version", true, "set protocol version (required for authentication)"));
-        parser.addOption(new Option(null, "quiet'", false, "quiet progress logging'"));
+        parser.addOption(new Option(null, "quiet", false, "quiet progress logging"));
         parser.addOption(new Option(null, "sync", false, "import data in synchronous mode (default asynchronous)"));
         parser.addOption(new Option(null, "username", true, "set username for auth (only if protocol-version is set)"));
         parser.addOption(new Option(null, "limit", true, "set number of rows return limit"));
