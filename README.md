@@ -75,5 +75,3 @@ Beyond that, a large portion of the parameters have never been tested, as I have
 
 However, to the best of my knowledge, all of these parameters have been implemented correctly. If you intend to use any of them, I'd encourage you to write Unit tests for them to validate their function before attempting to use them, particularly in any valuable/sensitive environments.
 
-## TODOs
- - Add the built JAR file to the GitHub Releases
